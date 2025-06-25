@@ -1,0 +1,91 @@
+use kec
+switched to db kec
+db.createCollection("user")
+{ ok: 1 }
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bc93649225863fbaaa346')
+}
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bc95549225863fbaaa347')
+}
+db.User.insertOne({
+name : "Rakshit",
+email : "rakshitros52@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bc9b349225863fbaaa348')
+}
+db.User.insertOne({
+name : "karthi",
+email : "ponkarthiks@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bc9e649225863fbaaa349')
+}
+db.User.insertOne({
+name : "jasasdfghjkl;",
+email : "rakshitros52
+@gmail.com",
+age : "19",
+dep : "EIE"})
+SyntaxError: Unterminated string constant. (3:8)
+
+[0m [90m 1 |[39m db[33m.[39m[33mUser[39m[33m.[39minsertOne({
+ [90m 2 |[39m name [33m:[39m [32m"jasasdfghjkl;"[39m[33m,[39m
+[31m[1m>[22m[39m[90m 3 |[39m email [33m:[39m [32m"rakshitros52[39m
+ [90m   |[39m         [31m[1m^[22m[39m
+ [90m 4 |[39m [33m@[39mgmail[33m.[39mcom[32m",[39m
+ [90m 5 |[39m age [33m:[39m [32m"19"[39m[33m,[39m
+ [90m 6 |[39m dep [33m:[39m [32m"EIE"[39m})[0m
+ 
+ 
+ 
+db.User.insertOne({
+name : "JAGATHEESHWAR",
+email : "jak@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bca7649225863fbaaa34a')
+}
+db.User.insertOne({
+name : "rohit",
+email : "hittu@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bca9a49225863fbaaa34b')
+}
+db.User.insertOne({
+name : "sabari",
+email : "saaakusabari@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bcab649225863fbaaa34c')
+}
+db.User.insertOne({
+name : "deepak",
+email : "bakku@gmail.com",
+age : "19",
+dep : "EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685bcacd49225863fbaaa34d')
+}
+db.User.insertOne({
+name : "dakku",
+email : "dakkuk@gmail.com",
+age : "19",
+dep : "EIE"})
